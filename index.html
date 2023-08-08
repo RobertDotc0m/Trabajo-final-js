@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style/style.css" />
+        <title>Converdor de Monedas</title>
+      </head>
+      <body>
+        <section>
+          <h1>Convertidor de monedas</h1>
+          <div class="padre">
+            <form id="convertidor" class="box">
+              <h2>CLP Pesos</h2>
+              <input type="text" name="valor" />
+              <p>Convertir a</p>
+              <select name="moneda">
+                <option value="">Tipo de cambio</option>
+                <option value="dolar">Dolar</option>
+                <option value="euro">Euro</option>
+                <option value="uf">Unidad de fomento</option>
+              </select>
+              <button type="submit" class="buscar">Cambiar</button>
+              <div class="cambio">
+                <h3 id="valor-convertido"></h3>
+              </div>
+            </form>
+          </div>
+        </section>
+        <div class="graphic">
+          <canvas id="myChart"></canvas>
+        </div>
+        <script src="js/modena.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
+      </body>
+    </html>
+  </body>
+</html>
